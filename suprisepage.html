@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Surprise</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fce4ec;
+            color: #444;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #d81b60;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.5em;
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ad1457;
+        }
+        #loveLetter {
+            display: none;
+            margin-top: 20px;
+            background-color: #f8bbd0;
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Namaskar Smriti <br>23RD OCTOBER 2024 it is!</h1>
+    <button id="surpriseButton">press for shh i wont say: press kar</button>
+
+    <div id="loveLetter">
+        <h2>Heyy ♡ </h2>
+        <p>
+            On this special day, I want to take a moment to remind you of just how much you mean to me. well it has been a year now and im really blushing thinking about it. aur we made it across the on year mark and you still like me WOW....kushi ke aasu aaraha hai
+        <p>
+            I could still remember the very conversation of us on 23rd october 2023 and not jus that i remember evry detail of you and us, and ive made a core memory every moment we have shared. From our simplest bakbak to bakwas lol..
+        </p>
+        <p>
+            As we celebrate our love today,i wish i could meet you in real and give you this letter..anyways picture tow abhi baaki hai soo ill meet you soon hehe
+        </p>
+        <p>
+            With all my love,<br><strong>Aaapki Wulfuu</strong>
+        </p>
+    </div>
+
+    <script>
+        // Get the button and love letter div
+        const surpriseButton = document.getElementById('surpriseButton');
+        const loveLetter = document.getElementById('loveLetter');
+
+        // Add click event listener to the button
+        surpriseButton.addEventListener('click', () => {
+            loveLetter.style.display = 'block'; // Show the love letter
+            surpriseButton.style.display = 'none'; // Hide the surprise button
+        });
+    </script>
+
+</body>
+</html>
